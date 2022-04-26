@@ -34,5 +34,5 @@ module.exports = ({ env }) => {
         },
     };
 
-    return configs[env("DATABASE_MODE")];
+    return configs[env("REMOTE")];
 };
