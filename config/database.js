@@ -20,7 +20,7 @@ module.exports = ({ env }) => {
             connection: {
                 client: "postgres",
                 connection: {
-                    host: env("DB_HOST", "127.0.0.1"),
+                    host: env("DB_HOST"),
                     port: env.int("DB_PORT", 3306),
                     database: env("DB_NAME"),
                     user: env("DB_USER"),
@@ -34,5 +34,5 @@ module.exports = ({ env }) => {
         },
     };
 
-    return configs[env("REMOTE")];
+    return configs[env("DATABASE_MODE")];
 };
