@@ -1,0 +1,162 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::flower.flower",
+  "value": {
+    "uid": "api::flower.flower",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Image": {
+        "edit": {
+          "label": "Image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Watering": {
+        "edit": {
+          "label": "Watering",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Watering",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Description": {
+        "edit": {
+          "label": "Description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "author": {
+        "edit": {
+          "label": "author",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "author",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "Image",
+        "Watering"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "Watering",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "Image",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Description",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "author"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

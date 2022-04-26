@@ -1,0 +1,40 @@
+{
+  "name": "Authenticated",
+  "description": "Default role given to authenticated user.",
+  "type": "authenticated",
+  "permissions": [
+    {
+      "action": "api::flower.flower.create"
+    },
+    {
+      "action": "api::flower.flower.find"
+    },
+    {
+      "action": "api::flower.flower.findOne"
+    },
+    {
+      "action": "api::post.post.create"
+    },
+    {
+      "action": "api::post.post.find"
+    },
+    {
+      "action": "api::post.post.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.user.create"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}
