@@ -12,12 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     },
-    "Image": {
+    "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -26,16 +27,30 @@
         "audios"
       ]
     },
-    "Watering": {
-      "type": "integer"
-    },
-    "Description": {
-      "type": "richtext"
+    "description": {
+      "type": "richtext",
+      "required": true
     },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categorory.categorory"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "daysToChangeGround": {
+      "type": "integer"
+    },
+    "daysToWatering": {
+      "type": "integer"
     }
   }
 }
